@@ -1,0 +1,3 @@
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\x64\Debug\keriaFinalRPG.vcxproj.CopyComplete
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\x64\Debug\keriaFinalRPG.exe
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\x64\Debug\sqlite3.dll

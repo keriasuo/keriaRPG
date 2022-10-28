@@ -1,0 +1,15 @@
+﻿  mainRPG.cpp
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(627,79): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(642,30): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(618,6): warning C4101: rc: неиспользованная локальная переменная
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(281): warning C4715: usemagicalskills: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(308): warning C4715: usephysicalskills: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(327): warning C4715: useskills: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(400): warning C4715: AdventureFunc: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(435): warning C4715: ggattack: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(702): warning C4715: settings: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(610): warning C4715: FindNewMob: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(801): warning C4715: SkillsAndUpgrades: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(127): warning C4715: MainHero::showItems: значение возвращается не при всех путях выполнения
+D:\Visual Studio 2022\Project'sss\keriaFinalRPG\mainRPG.cpp(187): warning C4715: MainHero::showShop: значение возвращается не при всех путях выполнения
+  keriaFinalRPG.vcxproj -> D:\Visual Studio 2022\Project'sss\keriaFinalRPG\x64\Debug\keriaFinalRPG.exe
