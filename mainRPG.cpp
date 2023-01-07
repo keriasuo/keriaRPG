@@ -31,21 +31,21 @@ public:
 	void printStatsgg()
 	{
 		cout << "---------------------------------------------------------\n" << name << endl;
-		cout << "Óðîâåíü: " << lvl << endl;
-		cout << "Îïûò: " << exp << endl;
-		cout << "Çäîðîâüå: " << hp << "HP" << endl;
-		cout << "Óðîí: " << damage << endl;
-		cout << "Çàùèòà:  " << resist << endl;
-		cout << "Ãîëäà: " << gold << endl;
-		cout << "Ñèëà: " << power << endl;
-		cout << "Ëîâêîñòü:  " << agility << endl;
-		cout << "Èíòåëëåêò:  " << intellect << endl;
-		cout << "Ìàãè÷åñêàÿ ñèëà:  " << magpower << endl;
+		cout << "Ã“Ã°Ã®Ã¢Ã¥Ã­Ã¼: " << lvl << endl;
+		cout << "ÃŽÃ¯Ã»Ã²: " << exp << endl;
+		cout << "Ã‡Ã¤Ã®Ã°Ã®Ã¢Ã¼Ã¥: " << hp << "HP" << endl;
+		cout << "Ã“Ã°Ã®Ã­: " << damage << endl;
+		cout << "Ã‡Ã Ã¹Ã¨Ã²Ã :  " << resist << endl;
+		cout << "ÃƒÃ®Ã«Ã¤Ã : " << gold << endl;
+		cout << "Ã‘Ã¨Ã«Ã : " << power << endl;
+		cout << "Ã‹Ã®Ã¢ÃªÃ®Ã±Ã²Ã¼:  " << agility << endl;
+		cout << "ÃˆÃ­Ã²Ã¥Ã«Ã«Ã¥ÃªÃ²:  " << intellect << endl;
+		cout << "ÃŒÃ Ã£Ã¨Ã·Ã¥Ã±ÃªÃ Ã¿ Ã±Ã¨Ã«Ã :  " << magpower << endl;
 	}
 	void printStatsMob() {
-		cout << "---------------------------------------------------------\nÂàì ïîïàëñÿ: " << name << endl;
-		cout << "Óðîâåíü: " << lvl << endl;
-		cout << "Çäîðîâüå: " << hp << "HP" << endl;
+		cout << "---------------------------------------------------------\nÃ‚Ã Ã¬ Ã¯Ã®Ã¯Ã Ã«Ã±Ã¿: " << name << endl;
+		cout << "Ã“Ã°Ã®Ã¢Ã¥Ã­Ã¼: " << lvl << endl;
+		cout << "Ã‡Ã¤Ã®Ã°Ã®Ã¢Ã¼Ã¥: " << hp << "HP" << endl;
 	}
 };
 
@@ -94,31 +94,31 @@ public:
 			j++;
 		}
 		cout << "Enter any key: Quit\n";
-		cout << "×òî âû õîòèòå èñïîëüçîâàòü?" << "\nEnter the number: ";
+		cout << "Ã—Ã²Ã® Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¼?" << "\nEnter the number: ";
 		cin >> u;
 		if (u == "1")
 		{
 			if (itemscount[0] > 0)
 			{
-				cout << "Âû èñïîëüçîâàëè " << items[0] << endl;
+				cout << "Ã‚Ã» Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã«Ã¨ " << items[0] << endl;
 				gg.hp = gg.hp + 10;
 				if (gg.hp > gg.maxhp) { gg.hp = gg.maxhp; }
-				cout << "Òåïåðü âàøè HP: " << gg.hp << endl;
+				cout << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã¢Ã Ã¸Ã¨ HP: " << gg.hp << endl;
 				gg.itemscount[0] = gg.itemscount[0] - 1;
 			}
-			else { cout << "Ó âàñ íåò " << items[0] << endl; }
+			else { cout << "Ã“ Ã¢Ã Ã± Ã­Ã¥Ã² " << items[0] << endl; }
 		}
 		if (u == "2")
 		{
 			if (itemscount[1] > 0)
 			{
-				cout << "Âû èñïîëüçîâàëè " << items[1] << endl;
+				cout << "Ã‚Ã» Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã«Ã¨ " << items[1] << endl;
 				gg.hp = gg.hp + gg.mppotion;
 				if (gg.mp > gg.maxmp) { gg.mp = gg.maxmp; }
-				cout << "Òåïåðü âàøè MP: " << gg.mp << endl;
+				cout << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã¢Ã Ã¸Ã¨ MP: " << gg.mp << endl;
 				gg.itemscount[1] = gg.itemscount[1] - 1;
 			}
-			else { cout << "Ó âàñ íåò " << items[1] << endl; }
+			else { cout << "Ã“ Ã¢Ã Ã± Ã­Ã¥Ã² " << items[1] << endl; }
 		}
 		if (u == "3")
 		{
@@ -145,40 +145,40 @@ public:
 			if (gg.gold >= cost[0])
 			{
 				gg.itemscount[0] += 1;
-				cout << "Âû êóïèëè " << items[0] << endl;
+				cout << "Ã‚Ã» ÃªÃ³Ã¯Ã¨Ã«Ã¨ " << items[0] << endl;
 			}
 			else
-				cout << "Âàì íå õâàòàåò äåíåã! Ó âàñ " << gg.gold << "g" << endl;
+				cout << "Ã‚Ã Ã¬ Ã­Ã¥ ÃµÃ¢Ã Ã²Ã Ã¥Ã² Ã¤Ã¥Ã­Ã¥Ã£! Ã“ Ã¢Ã Ã± " << gg.gold << "g" << endl;
 		}
 		if (p == "2")
 		{
 			if (gg.gold >= cost[1])
 			{
 				gg.itemscount[1] += 1;
-				cout << "Âû êóïèëè " << items[1] << endl;
+				cout << "Ã‚Ã» ÃªÃ³Ã¯Ã¨Ã«Ã¨ " << items[1] << endl;
 			}
 			else
-				cout << "Âàì íå õâàòàåò äåíåã! Ó âàñ " << gg.gold << "g" << endl;
+				cout << "Ã‚Ã Ã¬ Ã­Ã¥ ÃµÃ¢Ã Ã²Ã Ã¥Ã² Ã¤Ã¥Ã­Ã¥Ã£! Ã“ Ã¢Ã Ã± " << gg.gold << "g" << endl;
 		}
 		if (p == "3")
 		{
 			if (gg.gold >= cost[2])
 			{
 				gg.itemscount[2] += 1;
-				cout << "Âû êóïèëè " << items[2] << endl;
+				cout << "Ã‚Ã» ÃªÃ³Ã¯Ã¨Ã«Ã¨ " << items[2] << endl;
 			}
 			else
-				cout << "Âàì íå õâàòàåò äåíåã! Ó âàñ " << gg.gold << "g" << endl;
+				cout << "Ã‚Ã Ã¬ Ã­Ã¥ ÃµÃ¢Ã Ã²Ã Ã¥Ã² Ã¤Ã¥Ã­Ã¥Ã£! Ã“ Ã¢Ã Ã± " << gg.gold << "g" << endl;
 		}
 		if (p == "4")
 		{
 			if (gg.gold >= cost[3])
 			{
 				gg.itemscount[3] += 1;
-				cout << "Âû êóïèëè " << items[3] << endl;
+				cout << "Ã‚Ã» ÃªÃ³Ã¯Ã¨Ã«Ã¨ " << items[3] << endl;
 			}
 			else
-				cout << "Âàì íå õâàòàåò äåíåã! Ó âàñ " << gg.gold << "g" << endl;
+				cout << "Ã‚Ã Ã¬ Ã­Ã¥ ÃµÃ¢Ã Ã²Ã Ã¥Ã² Ã¤Ã¥Ã­Ã¥Ã£! Ã“ Ã¢Ã Ã± " << gg.gold << "g" << endl;
 		}
 		if (p == "5")
 		{
@@ -383,7 +383,7 @@ int AdventureFunc(Mobs* mob,MainHero& gg)
 		{
 
 		}
-		else { cout << "---------------------------------------------------------\nÓ âàñ " << gg.lvl << "lvl" << endl; return 5; }
+		else { cout << "---------------------------------------------------------\nÃ“ Ã¢Ã Ã± " << gg.lvl << "lvl" << endl; return 5; }
 	}
 	if (v == "3")
 	{
@@ -391,7 +391,7 @@ int AdventureFunc(Mobs* mob,MainHero& gg)
 		{
 
 		}
-		else { cout << "---------------------------------------------------------\nÓ âàñ " << gg.lvl << "lvl" << endl; }
+		else { cout << "---------------------------------------------------------\nÃ“ Ã¢Ã Ã± " << gg.lvl << "lvl" << endl; }
 	}
 	if (v == "4")
 	{
@@ -409,7 +409,7 @@ int callback(void* NotUsed, int argc, char** argv, char** azColName) {
 
 int rolling() {
 	int roll;
-	cout << "Åñëè âàì âûïàäåò ÷èñëî äî 90, âû ñáåæèòå: ";
+	cout << "Ã…Ã±Ã«Ã¨ Ã¢Ã Ã¬ Ã¢Ã»Ã¯Ã Ã¤Ã¥Ã² Ã·Ã¨Ã±Ã«Ã® Ã¤Ã® 90, Ã¢Ã» Ã±Ã¡Ã¥Ã¦Ã¨Ã²Ã¥: ";
 	roll = 1 + rand() % 100;
 	return roll;
 }
@@ -417,17 +417,17 @@ int rolling() {
 int ggattack(Mobs* mob, MainHero& gg)
 {
 	int k = 1;
-	cout << "---------------------------------------------------------\nÂàøè õï: " << gg.hp << "HP" << endl;
+	cout << "---------------------------------------------------------\nÃ‚Ã Ã¸Ã¨ ÃµÃ¯: " << gg.hp << "HP" << endl;
 	mob->hp -= gg.damage;
-	cout << "Âû íàíåñëè: " << gg.damage << " óðîíà" << endl;
-	cout << "Ó " << mob->name << " îñòàëîñü " << mob->hp << "HP" << endl;
+	cout << "Ã‚Ã» Ã­Ã Ã­Ã¥Ã±Ã«Ã¨: " << gg.damage << " Ã³Ã°Ã®Ã­Ã " << endl;
+	cout << "Ã“ " << mob->name << " Ã®Ã±Ã²Ã Ã«Ã®Ã±Ã¼ " << mob->hp << "HP" << endl;
 	if (mob->hp > 0) {
-		cout << "---------------------------------------------------------\n" << mob->name << " íàíîñèò âàì " << mob->damage << " óðîíà" << endl;
+		cout << "---------------------------------------------------------\n" << mob->name << " Ã­Ã Ã­Ã®Ã±Ã¨Ã² Ã¢Ã Ã¬ " << mob->damage << " Ã³Ã°Ã®Ã­Ã " << endl;
 		gg.hp = gg.hp - mob->damage;
-		cout << "Âàøè õï: " << gg.hp << "HP" << endl;
+		cout << "Ã‚Ã Ã¸Ã¨ ÃµÃ¯: " << gg.hp << "HP" << endl;
 		if (gg.hp <= 0)
 		{
-			cout << "---------------------------------------------------------\nÂû ïðîèãðàëè!\nÂàñ óáèë " << mob->name << endl;
+			cout << "---------------------------------------------------------\nÃ‚Ã» Ã¯Ã°Ã®Ã¨Ã£Ã°Ã Ã«Ã¨!\nÃ‚Ã Ã± Ã³Ã¡Ã¨Ã« " << mob->name << endl;
 			gg.hp = 0;
 			return 0;
 		}
@@ -448,44 +448,44 @@ void upgglvl(MainHero& gg)
 }
 void levelsystem1(MainHero& gg)
 {
-	if (gg.exp >= 10 && gg.exp < 20) { upgglvl(gg); gg.lvl = 2; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 10 && gg.exp < 20) { upgglvl(gg); gg.lvl = 2; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 
 }
 void levelsystem2(MainHero& gg)
 {
-	if (gg.exp >= 20 && gg.exp < 40) { upgglvl(gg); gg.lvl = 3; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 20 && gg.exp < 40) { upgglvl(gg); gg.lvl = 3; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem3(MainHero& gg)
 {
-	if (gg.exp >= 40 && gg.exp < 70) { upgglvl(gg);  gg.lvl = 4; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\nÂàøè õàðàêòåðèñòèêè ïîâûøåíû!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 40 && gg.exp < 70) { upgglvl(gg);  gg.lvl = 4; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\nÃ‚Ã Ã¸Ã¨ ÃµÃ Ã°Ã ÃªÃ²Ã¥Ã°Ã¨Ã±Ã²Ã¨ÃªÃ¨ Ã¯Ã®Ã¢Ã»Ã¸Ã¥Ã­Ã»!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem4(MainHero& gg)
 {
-	if (gg.exp >= 70 && gg.exp < 100) { upgglvl(gg);  gg.lvl = 5; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 70 && gg.exp < 100) { upgglvl(gg);  gg.lvl = 5; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem5(MainHero& gg)
 {
-	if (gg.exp >= 100 && gg.exp < 120) { upgglvl(gg);  gg.lvl = 6; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 100 && gg.exp < 120) { upgglvl(gg);  gg.lvl = 6; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem6(MainHero& gg)
 {
-	if (gg.exp >= 120 && gg.exp < 150) { upgglvl(gg);  gg.lvl = 7; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 120 && gg.exp < 150) { upgglvl(gg);  gg.lvl = 7; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem7(MainHero& gg)
 {
-	if (gg.exp >= 150 && gg.exp < 170) { upgglvl(gg);  gg.lvl = 8; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 150 && gg.exp < 170) { upgglvl(gg);  gg.lvl = 8; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem8(MainHero& gg)
 {
-	if (gg.exp >= 170 && gg.exp < 200) { upgglvl(gg);  gg.lvl = 9; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 170 && gg.exp < 200) { upgglvl(gg);  gg.lvl = 9; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem9(MainHero& gg)
 {
-	if (gg.exp >= 200 && gg.exp < 250) { upgglvl(gg);  gg.lvl = 10; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 200 && gg.exp < 250) { upgglvl(gg);  gg.lvl = 10; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 void levelsystem10(MainHero& gg)
 {
-	if (gg.exp >= 250 && gg.exp < 300) { upgglvl(gg);  gg.lvl = 11; gg.skillpoint += 3; cout << "Âû ïîâûñèëè óðîâåíü!\n" << "Òåïåðü ó âàñ " << gg.lvl << " lvl è " << gg.skillpoint << " skillpoints" << endl; }
+	if (gg.exp >= 250 && gg.exp < 300) { upgglvl(gg);  gg.lvl = 11; gg.skillpoint += 3; cout << "Ã‚Ã» Ã¯Ã®Ã¢Ã»Ã±Ã¨Ã«Ã¨ Ã³Ã°Ã®Ã¢Ã¥Ã­Ã¼!\n" << "Ã’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.lvl << " lvl Ã¨ " << gg.skillpoint << " skillpoints" << endl; }
 }
 
 
@@ -548,7 +548,7 @@ int FindNewMob(Mobs* mob, MainHero& gg)
 				}
 				if (mob->hp <= 0)
 				{
-					cout << "---------------------------------------------------------\nÂû óáèëè: " << mob->name << endl;
+					cout << "---------------------------------------------------------\nÃ‚Ã» Ã³Ã¡Ã¨Ã«Ã¨: " << mob->name << endl;
 					if (mob->name == "Slime") { gg.exp += mob->RewardExp; gg.gold += mob->RewardGold;   cout << "Reward " << mob->RewardExp << "XP!\n" << mob->RewardGold << " gold\n"; }
 					if (mob->name == "Skelet") { gg.exp += mob->RewardExp; gg.gold += mob->RewardGold;   cout << "Reward " << mob->RewardExp << "XP!\n" << mob->RewardGold << " gold\n"; }
 					if (mob->name == "Ogre") { gg.exp += mob->RewardExp; gg.gold += mob->RewardGold;   cout << "Reward " << mob->RewardExp << "XP!\n" << mob->RewardGold << " gold\n"; }
@@ -573,14 +573,14 @@ int FindNewMob(Mobs* mob, MainHero& gg)
 				if (g == "3")
 				{
 					if (rolling() < 90) {
-						cout << "Âû ñáåæàëè!" << endl;
+						cout << "Ã‚Ã» Ã±Ã¡Ã¥Ã¦Ã Ã«Ã¨!" << endl;
 						delete mob;
 						k = 0;
 						break;
 					}
 					else
 					{
-						cout << "Ñáåæàòü íå óäàëîñü!" << endl;
+						cout << "Ã‘Ã¡Ã¥Ã¦Ã Ã²Ã¼ Ã­Ã¥ Ã³Ã¤Ã Ã«Ã®Ã±Ã¼!" << endl;
 					}
 				}
 				if (g == "4")
@@ -603,7 +603,7 @@ int FindNewMob(Mobs* mob, MainHero& gg)
 	}
 	else
 	{
-		cout << "---------------------------------------------------------\nÂû íå ìîæåòå äàëüøå ïðîäîëæàòü, ó âàñ: " << gg.hp << "HP" << endl;
+		cout << "---------------------------------------------------------\nÃ‚Ã» Ã­Ã¥ Ã¬Ã®Ã¦Ã¥Ã²Ã¥ Ã¤Ã Ã«Ã¼Ã¸Ã¥ Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã Ã²Ã¼, Ã³ Ã¢Ã Ã±: " << gg.hp << "HP" << endl;
 		return 0;
 	}
 
@@ -645,7 +645,7 @@ void save(MainHero& gg)
 
 	sql = "SELECT * FROM 'AllSavesGG';";
 	sqlite3_close(db);
-	cout << "---------------------------------------------------------\nÂàøè äàííûå óñïåøíî ñîõðàíåíû!\n" << "name: " << gg.name << "\nlvl: " << gg.lvl << "\n" << "exp: " << gg.exp << endl;
+	cout << "---------------------------------------------------------\nÃ‚Ã Ã¸Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã»!\n" << "name: " << gg.name << "\nlvl: " << gg.lvl << "\n" << "exp: " << gg.exp << endl;
 }
 
 void load(MainHero& gg)
@@ -676,7 +676,7 @@ void load(MainHero& gg)
 
 	sqlite3_close(db);
 
-	cout << "---------------------------------------------------------\nÂàøè äàííûå óñïåøíî çàãðóæåíû!\n" << "name: " << gg.name << "\nlvl: " << gg.lvl << "\n" << "exp: " << gg.exp << endl;
+	cout << "---------------------------------------------------------\nÃ‚Ã Ã¸Ã¨ Ã¤Ã Ã­Ã­Ã»Ã¥ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã§Ã Ã£Ã°Ã³Ã¦Ã¥Ã­Ã»!\n" << "name: " << gg.name << "\nlvl: " << gg.lvl << "\n" << "exp: " << gg.exp << endl;
 }
 
 void renameGG(MainHero& gg)
@@ -711,17 +711,17 @@ void skillsTree(MainHero& gg)
 		if (h == 1)
 		{
 			gg.power = gg.power + 1;
-			cout << "\n---------------------------------------------------------\nÒåïåðü ó âàñ " << gg.power << " ñèëû" << endl;
+			cout << "\n---------------------------------------------------------\nÃ’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.power << " Ã±Ã¨Ã«Ã»" << endl;
 		}
 		if (h == 2)
 		{
 			gg.agility = gg.agility + 1;
-			cout << "\n---------------------------------------------------------\nÒåïåðü ó âàñ " << gg.agility << " ëîâêîñòè" << endl;
+			cout << "\n---------------------------------------------------------\nÃ’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.agility << " Ã«Ã®Ã¢ÃªÃ®Ã±Ã²Ã¨" << endl;
 		}
 		if (h == 3)
 		{
 			gg.intellect = gg.intellect + 1;
-			cout << "\n---------------------------------------------------------\nÒåïåðü ó âàñ " << gg.intellect << " èíòåëëåêòà" << endl;
+			cout << "\n---------------------------------------------------------\nÃ’Ã¥Ã¯Ã¥Ã°Ã¼ Ã³ Ã¢Ã Ã± " << gg.intellect << " Ã¨Ã­Ã²Ã¥Ã«Ã«Ã¥ÃªÃ²Ã " << endl;
 		}
 		if (h == 4)
 		{
@@ -878,9 +878,6 @@ void glmenu(Mobs* mob, MainHero& gg)
 
 int main() {
 	setlocale(LC_ALL, "rus");
-	string a1 = "heroinwater.mp3";
-	//mciSendString(L"open \"heroinwater.mp3\" type mpegvideo alias mp3", NULL, 0, NULL);
-	//mciSendString(L"play mp3", NULL, 0, NULL);
 	Mobs* mob = new Mobs;
 	MainHero gg;
 	gg.createHero();
